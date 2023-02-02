@@ -3,11 +3,11 @@ import json
 file = open("bukhary.json", "r")
 data = json.load(file)
 
-def chapters(who):
+def chapters(who, number):
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == who:
-                return data[i]["books"][j]["name"][0]["info"]
+                return data[i]["books"][j]["hadiths"][number]["info"]
             
 def hadiths(chapter, number):
     for i in range(len(data)):
@@ -27,4 +27,4 @@ def by(chapter, number):
 def hadiths_beautyfier(hadith, by, chapter):
     return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
 
-print(hadiths_beautyfier(hadiths("1. Revelation", 0), by("1. Revelation", 0), chapters("1. Revelation")))
+print(hadiths_beautyfier(hadiths("1. Revelation", 2), by("1. Revelation", 2), chapters("1. Revelation", 2)))
