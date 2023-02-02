@@ -3,16 +3,17 @@ import json
 file = open("bukhary.json", "r")
 data = json.load(file)
 
-print(data[0]["books"][0]["hadiths"][0]["text"])
+def chapters():
+    for i in range(len(data)):
+        for j in range(len(data[i]["books"])):
+            print(data[i]["books"][j]["name"])
+            
+def hadiths(chapter, info):
+    for i in range(len(data)):
+        for j in range(len(data[i]["books"])):
+            if data[i]["books"][j]["name"] == chapter:
+                return data[i]["books"][j]["hadiths"][info]["text"]
+            else:
+                return "Not Found"
 
-"""for i in data[0]["books"][0]["hadiths"]:
-    print(i["info"] + "\n",i["by"]+ "\n", i["text"])
-"""
-"""for i in data[0]["books"]: # 0 is the first book
-    print(i["name"])"""
-
-"""for i in data[7]["books"]: # 1 is the second book
-    print(i["name"])"""
-
-for i in range(len(data)):
-    print(data[i]["name"])
+print(hadiths("The Book of Purification", 1))
