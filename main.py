@@ -30,4 +30,13 @@ def hadiths_beautyfier(hadith, by, chapter):
     # Add a title to the hadith
     return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
 
-print(hadiths_beautyfier(hadiths("1. Revelation", 3), by("1. Revelation", 3), chapters("1. Revelation", 3)))
+# Voila comment faire pour avoir une belle sortie : 
+# print(hadiths_beautyfier(hadiths("1. Revelation", 3), by("1. Revelation", 3), chapters("1. Revelation", 3)))
+
+def main():
+    Livre = input("Quel livre voulez-vous ?, le titre en entier ")
+    hadith = int(input("Quel hadith voulez-vous ?, en num "))
+    hadith -= 1
+    return hadiths_beautyfier(hadiths(Livre, hadith), by(Livre, hadith), chapters(Livre, hadith))
+
+print(main())
