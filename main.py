@@ -1,42 +1,46 @@
 import json
+from deep_translator import GoogleTranslator
 
-file = open("bukhary.json", "r")
-data = json.load(file)
+file = open("bukhary.json", "r") # Ouverture du fichier
+data = json.load(file) # Lecture du fichier en format json, attention ça le donne en forme de liste de dictionnaire
 
-def chapters(who, number):
+def chapters(who, number): # Donne le nom du chapitre
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == who:
                 return data[i]["books"][j]["hadiths"][number]["info"]
             return "Book not found"
-        return "Hadith not found"
+        raise ValueError("Info not found")
     
-def hadiths(chapter, number):
+def hadiths(chapter, number): # Donne le hadith
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == chapter:
                 return data[i]["books"][j]["hadiths"][number]["text"]
-    return "Not Found"
+    raise ValueError("hadith not found")
 
-def by(chapter, number):
+def by(chapter, number): # Donne le nom de la persionne qui a rapporte le hadith
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == chapter:
                 return data[i]["books"][j]["hadiths"][number]["by"]
             else:
-                return "Not Found"
+                raise ValueError("chapter not found")
+def traduction(texte): # Traduit le texte en français
+    return GoogleTranslator(source='auto', target='fr').translate(texte)
 
-def hadiths_beautyfier(hadith, by, chapter):
+def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le met en forme
     # Add a title to the hadith
     return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
 
-# Voila comment faire pour avoir une belle sortie : 
-# print(hadiths_beautyfier(hadiths("1. Revelation", 3), by("1. Revelation", 3), chapters("1. Revelation", 3)))
-
-def main():
-    Livre = input("Quel livre voulez-vous ?, le titre en entier ")
-    hadith = int(input("Quel hadith voulez-vous ?, en num "))
+def main(): # Fonction principale qui demande à l'utilisateur ce qu'il veut et renvoie le hadith traduit
+    Livre = input("Quel livre voulez-vous ?, le titre en entier : ")
+    hadith = int(input("Quel hadith voulez-vous ?, en num : "))
     hadith -= 1
-    return hadiths_beautyfier(hadiths(Livre, hadith), by(Livre, hadith), chapters(Livre, hadith))
-
+    try:
+        return hadiths_beautyfier(traduction(hadiths(Livre, hadith)), by(Livre, hadith), chapters(Livre, hadith))
+    except:
+        return "Ce que vous avez saisi n'existe pas"
+    
 print(main())
+            
