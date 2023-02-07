@@ -11,7 +11,8 @@ for i in range(len(data):
 # Tous les chapitres : 
 Il y a un total de 93 chapitre qu'on peut lister de la maniere suivante :
 
-```python
+```
+python
 for i in range(len(data)):
     for j in range(len(data[i]["books"])):
         print(data[i]["books"][j]["name"])
