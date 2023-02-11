@@ -2,13 +2,13 @@ import json
 from deep_translator import GoogleTranslator
 
 file = open("bukhary.json", "r") # Ouverture du fichier
-data = json.load(file) # Lecture du fichier en format json, attention ça le donne en forme de liste de dictionnaire
+data = json.load(file) # Lecture du fichier en format jsonsq, attention ça le donne en forme de liste de dictionnaire
 
 def chapters(who, number): # Donne le nom du chapitre
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == who:
-                return data[i]["books"][j]["hadiths"][number]["info"]
+                return data[i]  ["books"][j]["hadiths"][number]["info"]
             return "Book not found"
         raise ValueError("Info not found")
     
