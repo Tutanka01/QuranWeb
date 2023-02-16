@@ -3,19 +3,12 @@ import json
 file = open("quran_fr.json", "r") # Ouverture du fichier
 data = json.load(file)
 
-def quran():
-    noms = []
-    for i in range(len(data["sourates"])):
-        noms.append(data["sourates"][i]["nom_phonetique"])
-    return noms
-
-print(quran())
-def quran2(sourate):
-    for i in range(len(data["sourates"])):
-        if data["sourates"][i]["nom_phonetique"] == sourate:
+def quran_text_fr(nom): # Donne le nom du chapitre
+    for i in range(0, len(data["sourates"])): # Il faut bien mettre "sourates"
+        if data["sourates"][i]["nom_phonetique"] == nom:
             for k in range(len(data["sourates"][i]["versets"])):
-                print(len(data["sourates"][i]["versets"]))
-                return data["sourates"][i]["versets"][k]["text"]
-        else:
-            raise ValueError("sourate not found")
+                print(data["sourates"][i]["versets"][k]["text"] + "\n")
+            
+            return "Sourate not found"
 
+print(quran_text_fr("Al-Baqara"))
