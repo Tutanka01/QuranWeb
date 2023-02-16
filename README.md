@@ -1,5 +1,6 @@
 # Bukhary_TEST
 - J'essaie de faire un truc sympa avec le fichier json avec la sunnah écrite par AlBukhary(ra)
+- Imagine quand meme une AI qui permet de voir si t'as bien recite ou pas, juste imagine (Tarteel)
 
 # Nombre de livres :
 - Il y a un total de 9 volumes (livres), pour voir tous les titres : 
