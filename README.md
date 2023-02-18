@@ -31,4 +31,6 @@ def quran():
     return noms
 ```	 
 # Habiitation Web
-- Je suis en train de faire un site web pour que les gens puissent lire le quran et les hadiths, par le moment j'ai pas encore fini, mais je vais essayer de le finir le plus vite possible, si vous avez des idees n'hesitez pas a me contacter :)
+- Je suis en train de faire un site web pour que les gens puissent lire le quran et les hadiths, par le moment j'ai pas encore fini, j'ai quelques problemes avec le css, mais je vais essayer de le finir le plus vite possible
+
+    - Par le moment j'utilise le framework Flask, mais je vais essayer de le faire avec Django dans un futur proche
