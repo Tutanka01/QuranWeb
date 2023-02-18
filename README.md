@@ -34,3 +34,7 @@ def quran():
 - Je suis en train de faire un site web pour que les gens puissent lire le quran et les hadiths, par le moment j'ai pas encore fini, j'ai quelques problemes avec le css, mais je vais essayer de le finir le plus vite possible
 
     - Par le moment j'utilise le framework Flask, mais je vais essayer de le faire avec Django dans un futur proche
+    - Voila pour donner du css au fichier
+```html
+<link rel="stylesheet" href="{{ url_for('static', filename = 'styles_quran.css') }}">
+```
