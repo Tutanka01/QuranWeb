@@ -30,3 +30,5 @@ def quran():
         noms.append(data["sourates"][i]["nom_phonetique"])
     return noms
 ```	 
+# Habiitation Web
+- Je suis en train de faire un site web pour que les gens puissent lire le quran et les hadiths, par le moment j'ai pas encore fini, mais je vais essayer de le finir le plus vite possible, si vous avez des idees n'hesitez pas a me contacter :)
