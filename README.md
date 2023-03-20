@@ -38,3 +38,6 @@ def quran():
 ```html
 <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_quran.css') }}">
 ```
+# Voila a quoi ça ressemble par le moment :
+![alt text](images/page_login.png)
+![alt text](images/pahe_main.png)
