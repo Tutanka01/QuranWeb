@@ -1,12 +1,13 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask_cors import CORS
 from flask import Flask, redirect, url_for, request
 from markupsafe import escape
 from quran_formater import *
 
-
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
@@ -20,6 +21,10 @@ def login():
    else:
       user = request.args.get('name')
       return render_template('login.html')
+
+@app.route('/sourate/<sourate>')
+def sourate(sourate):
+   return render_template('index.html', titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
 
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)

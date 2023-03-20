@@ -8,6 +8,18 @@
   <title>{{ titre }}</title>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-color: #eaeaea;
+    }
     body {
       display: flex;
       flex-direction: column;
@@ -23,8 +35,7 @@
       border-radius: 10px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
       margin-bottom: 20px;
-      vertical-align: top; /* here */
-
+      vertical-align: top;
     }
 
     h1 {
@@ -60,15 +71,21 @@
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      align-self: flex-end;
+      flex-wrap: wrap;
+      
     }
 
-    .lsite ol {
+    .lsite ul {
       list-style-type: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
       margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .lsite li {
@@ -78,6 +95,7 @@
       padding: 10px;
       text-align: center;
       cursor: pointer;
+      
     }
 
     .lsite li:hover {
@@ -85,8 +103,8 @@
     }
 
     @media only screen and (max-width: 600px) {
-      .lsite ol {
-        grid-template-columns: 1fr;
+      .lsite ul {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
       }
     }
   </style>
@@ -95,14 +113,6 @@
 </head>
 
 <body>
-  <div class="lsite">
-    <ol> 
-      {%for i in range(0, len)%} 
-        <li>{{sourates[i]}}</li> 
-      {%endfor%} 
-    </ol> 
-  </div>
-
   <div class="container">
     <h1>Ce que vous voulez lire :</h1>
     <form action="http://localhost:5000/login" method="POST">
@@ -110,6 +120,28 @@
       <input type="submit" value="Envoyer">
     </form>
   </div>
+
+ <div class="center">
+  <div class="lsite">
+    <ul> 
+      {% for i in range(0, len) %} 
+        <li class="sourate-item">{{ sourates[i] }}</li> 
+      {% endfor %} 
+    </ul> 
+  </div>
+</div>
 </body>
 
+<script>
+  const items = document.querySelectorAll('.sourate-item');
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const name = item.textContent;
+      fetch(`http://localhost:5000/sourate/${name}`)
+        .then(response => {
+          // Traitez la réponse ici
+        })
+    });
+  });
+</script>
 </html>
