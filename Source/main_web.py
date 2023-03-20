@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   return render_template('login.html')
+   return render_template('login.html', len = len(sourates()), sourates = sourates())
 
 @app.route('/login',methods = ['POST', 'GET']) # Here wher we put if is a post or get request
 def login():
