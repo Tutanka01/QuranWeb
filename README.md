@@ -41,3 +41,9 @@ def quran():
 # Voila a quoi ça ressemble par le moment :
 ![alt text](images/page_login.png)
 ![alt text](images/pahe_main.png)
+
+## Choses a modifier et/ou ajouter :
+- [ ] Ajouter le hadith du jour
+- [ ] Fonction de recherche
+- [ ] Possibilité de changer la langue (arabe, francais, (anglais ??))
+- [ ] Pouvoir cherches les hadiths par nom de livre (il faudrait avant d'ajouter la fonctionnalite de chercher des hadiths)
