@@ -1,10 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ titre }}</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_quran.css') }}">
+        <style>
+            body {
+                font-size: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f5f5f5;
+            }
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: auto;
+                padding: 30px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: #000 #f5f5f5;
+            }
+
+            @font-face { 
+                font-family: 'Al-Qalam'; 
+                src: url('static/Al Qalam Quran.ttf'); 
+            }
+
+            .quran {
+                text-align: right;
+                font-family: 'Al-Qalam', sans-serif;
+                line-height: 2;
+                margin-top: 20px;
+                direction: rtl;
+            }
+
+
+            .quran span {
+                display: inline-block;
+                padding: 5px;
+            }
+            .quran .verse-number {
+                margin-right: 10px;
+                background-color: #000;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 0.7rem;
+                padding: 3px 6px;
+            }
+            .quran .highlight {
+                background-color: yellow;
+            }
+            .quran .chapter-name {
+                text-align: center;
+                margin: 0;
+                padding: 10px 0;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            .quran .chapter-name span {
+                font-size: 1rem;
+                font-weight: normal;
+            }
+            .quran .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                font-size: 0.8rem;
+            }
+            .quran .options select {
+                padding: 5px;
+            }
+        </style>
     </head>
     <body>
-        <p>Voila votre sourate {{ nom_sourate }}</p>
-        <h3 class="quran"> {{ sourate_texte }}</h3>
+        <div class="container">
+            <h1 class="chapter-name"> {{ nom_sourate }} <span>({{ titre }})</span></h1>
+            <div class="options">
+                <div>Changer la taille du texte : 
+                    <select onchange="changeFontSize(this)">
+                        <option value="16px">Petit</option>
+                        <option value="20px" selected>Moyen</option>
+                        <option value="24px">Grand</option>
+                        <option value="28px">Très grand</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quran" id="quran-text"> {{ sourate_texte }}</div>
+        </div>
+        <script>
+            function changeFontSize(element) {
+                const quranText = document.getElementById('quran-text');
+                quranText.style.fontSize = element.value;
+            }
+        </script>
     </body>
 </html>

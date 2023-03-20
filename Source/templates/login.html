@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{{ titre }}</title>
-   </head>
-      <body>
-         <h1>Ce que vous voulez lire :</h1>
-         <form action="http://localhost:5000/login" method="POST">
-            <input type="text" name="sourate" placeholder="ex : 'Al-Faatiha' ">
-            <input type="submit" value="Envoyer">
-      </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ titre }}</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #eaeaea;
+    }
+
+    .container {
+      border: 2px solid #0066cc;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0066cc;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2rem;
+      border: none;
+      border-bottom: 2px solid #0066cc;
+      outline: none;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ce que vous voulez lire :</h1>
+    <form action="http://localhost:5000/login" method="POST">
+      <input type="text" name="sourate" placeholder="ex : 'Al-Faatiha' ">
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+</body>
+
 </html>
