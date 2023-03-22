@@ -139,9 +139,11 @@
       const name = item.textContent;
       fetch(`http://localhost:5000/sourate/${name}`)
         .then(response => {
-          // Traitez la réponse ici
+          // Rediriger vers la page correspondante
+          window.location.href = `http://localhost:5000/sourate/${name}`;
         })
     });
   });
 </script>
+
 </html>

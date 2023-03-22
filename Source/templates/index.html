@@ -29,7 +29,7 @@
 
             @font-face { 
                 font-family: 'Al-Qalam'; 
-                src: url('static/Al Qalam Quran.ttf'); 
+                src: url('{{ url_for("static", filename="AlQalamQuran.ttf") }}');
             }
 
             .quran {
@@ -85,10 +85,10 @@
             <div class="options">
                 <div>Changer la taille du texte : 
                     <select onchange="changeFontSize(this)">
-                        <option value="16px">Petit</option>
-                        <option value="20px" selected>Moyen</option>
-                        <option value="24px">Grand</option>
-                        <option value="28px">Très grand</option>
+                        <option value="25px">Petit</option>
+                        <option value="35px" selected>Moyen</option>
+                        <option value="45px">Grand</option>
+                        <option value="55px">Très grand</option>
                     </select>
                 </div>
             </div>

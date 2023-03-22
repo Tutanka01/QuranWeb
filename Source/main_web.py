@@ -19,7 +19,6 @@ def login():
       sourate = request.form['sourate'] 
       return render_template('index.html', titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate))) # Il faut toujours mettre ka fonction esacpe pour eviter les attaques
    else:
-      user = request.args.get('name')
       return render_template('login.html')
 
 @app.route('/sourate/<sourate>')
