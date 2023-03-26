@@ -9,7 +9,7 @@ from quran_formater import *
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/')
+@app.route('/')# La route principale cad l'ip
 def index():
    return render_template('login.html', len = len(sourates()), sourates = sourates())
 
