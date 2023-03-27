@@ -5,114 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="script" href="{{ url_for('static', filename = 'script_login.js') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_quran.css') }}">
   <title>{{ titre }}</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-      background-color: #eaeaea;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-      background-color: #eaeaea;
-    }
-
-    .container {
-      border: 2px solid #0066cc;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
-      vertical-align: top;
-    }
-
-    h1 {
-      text-align: center;
-      color: #0066cc;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      font-size: 1.2rem;
-      border: none;
-      border-bottom: 2px solid #0066cc;
-      outline: none;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #0066cc;
-      color: #fff;
-      font-size: 1.2rem;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .lsite {
-      border: 2px solid #dcdcdc;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-      align-self: flex-end;
-      flex-wrap: wrap;
-      
-    }
-
-    .lsite ul {
-      list-style-type: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 10px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .lsite li {
-      border: 1px solid #dcdcdc;
-      border-radius: 5px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-      text-align: center;
-      cursor: pointer;
-      
-    }
-
-    .lsite li:hover {
-      background-color: #f7f7f7;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .lsite ul {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-      }
-    }
-  </style>
-
-
 </head>
 
 <body>
+  <div class="dropdown">
+    <button class="dropbtn">Quran</button>
+    <div class="dropdown-content">
+        {% for sourate in sourates %}
+        <a href="#">{{ sourate }}</a>
+        {% endfor %}
+    </div>
+  </div>
+
+  <div>
+    <h1>Quran.momo</h1>
+  </div>
+
   <div class="container">
     <h1>Ce que vous voulez lire :</h1>
     <form action="http://localhost:5000/login" method="POST">
@@ -131,19 +42,4 @@
   </div>
 </div>
 </body>
-
-<script>
-  const items = document.querySelectorAll('.sourate-item');
-  items.forEach(item => {
-    item.addEventListener('click', () => {
-      const name = item.textContent;
-      fetch(`http://localhost:5000/sourate/${name}`)
-        .then(response => {
-          // Rediriger vers la page correspondante
-          window.location.href = `http://localhost:5000/sourate/${name}`;
-        })
-    });
-  });
-</script>
-
 </html>

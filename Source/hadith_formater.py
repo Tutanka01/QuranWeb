@@ -27,7 +27,7 @@ def by(chapter, number): # Donne le nom de la persionne qui a rapporte le hadith
             else:
                 raise ValueError("chapter not found")
 def traduction(texte): # Traduit le texte en français
-    return GoogleTranslator(source='auto', target='ar').translate(texte)
+    return GoogleTranslator(source='auto', target='fr').translate(texte)
 
 def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le met en forme
     # Add a title to the hadith
@@ -36,9 +36,16 @@ def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le m
 def main(): # Fonction principale qui demande à l'utilisateur ce qu'il veut et renvoie le hadith traduit
     Livre = input("Quel livre voulez-vous ?, le titre en entier : ")
     hadith = int(input("Quel hadith voulez-vous ?, en num : "))
+    choix = input("Voulez-vous le traduire en français ? (y/n) : ")
     hadith -= 1
-    try:
-        return hadiths_beautyfier(traduction(hadiths(Livre, hadith)), by(Livre, hadith), chapters(Livre, hadith))
-    except:
-        return "Ce que vous avez saisi n'existe pas"
-    
+    if choix == "y":
+        try:
+            return hadiths_beautyfier(traduction(hadiths(Livre, hadith)), by(Livre, hadith), chapters(Livre, hadith))
+        except:
+            return "Ce que vous avez saisi n'existe pas"
+    else:
+        try:
+            return hadiths_beautyfier(hadiths(Livre, hadith), by(Livre, hadith), chapters(Livre, hadith))
+        except:
+            return "Ce que vous avez saisi n'existe pas"
+# Tests

@@ -5,6 +5,7 @@ from flask_cors import CORS
 from flask import Flask, redirect, url_for, request
 from markupsafe import escape
 from quran_formater import *
+from hadith_formater import *
 
 app = Flask(__name__)
 CORS(app)
@@ -24,6 +25,10 @@ def login():
 @app.route('/sourate/<sourate>')
 def sourate(sourate):
    return render_template('index.html', titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
+# Possibilite de voir les hadiths...
+@app.route('/hadith')
+def hadith():
+   return render_template('hadith.html')
 
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)
