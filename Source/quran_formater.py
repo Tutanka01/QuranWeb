@@ -10,6 +10,7 @@ def quran_text_fr(nom): # Donne le nom du chapitre
             for k in range(len(data["sourates"][i]["versets"])):
                 sourate += data["sourates"][i]["versets"][k]["text"] + "\n"
             return sourate
+
 def quran_text_ar(nom : str): # Donne le nom du chapitre
     sourate = ""
     for i in range(len(data["sourates"])): # Il faut bien mettre "sourates"
