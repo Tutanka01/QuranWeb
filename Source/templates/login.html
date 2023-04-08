@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="script" href="{{ url_for('static', filename = 'script_login.js') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_quran.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_index.css') }}">
+  
   <title>{{ titre }}</title>
 </head>
 
@@ -15,7 +17,7 @@
     <button class="dropbtn">Quran</button>
     <div class="dropdown-content">
         {% for sourate in sourates %}
-        <a href="#">{{ sourate }}</a>
+        <a href="">{{ sourate }}</a>
         {% endfor %}
     </div>
   </div>
@@ -25,9 +27,17 @@
   </div>
 
   <div class="container">
-    <h1>Ce que vous voulez lire :</h1>
+    <h1>Quelle sourate ?</h1>
     <form action="http://localhost:5000/login" method="POST">
       <input type="text" name="sourate" placeholder="ex : 'Al-Faatiha' ">
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+
+  <div class="container">
+    <h1>Quel hadith ?</h1>
+    <form action="http://localhost:5000/hadith" method="POST">
+      <input type="text" name="hadith" placeholder="ex : '1. Revelation' ">
       <input type="submit" value="Envoyer">
     </form>
   </div>
