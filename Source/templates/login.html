@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="script" href="{{ url_for('static', filename = 'script_login.js') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_index.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_login.css') }}">
   
   <title>{{ titre }}</title>
 </head>
@@ -34,14 +34,6 @@
     </form>
   </div>
 
-  <div class="container">
-    <h1>Quel hadith ?</h1>
-    <form action="http://localhost:5000/hadith" method="POST">
-      <input type="text" name="hadith" placeholder="ex : '1. Revelation' ">
-      <input type="submit" value="Envoyer">
-    </form>
-  </div>
-
  <div class="center">
   <div class="lsite">
     <ul> 
@@ -52,4 +44,21 @@
   </div>
 </div>
 </body>
+<script>
+  const items = document.querySelectorAll('.sourate-item');
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    const name = item.textContent;
+    fetch(`http://localhost:5000/sourate/${name}`)
+      .then(response => {
+        if (response.ok) {
+          // Rediriger vers la page correspondante
+          window.location.href = `http://localhost:5000/sourate/${name}`;
+        } else {
+          alert('Une erreur est survenue. Veuillez réessayer.');
+        }
+      })
+  });
+});
+</script>
 </html>

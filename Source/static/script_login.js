@@ -13,3 +13,6 @@ items.forEach(item => {
       })
   });
 });
+
+// Le script ne veut pas marcher quand je l'import
+// dans le fichier login.html, a voir !!

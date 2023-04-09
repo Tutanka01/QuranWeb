@@ -12,7 +12,7 @@ CORS(app)
 
 @app.route('/')# La route principale cad l'ip
 def index():
-   return render_template('login.html', len = len(sourates()), sourates = sourates())
+   return render_template('login.html', len = len(sourates()), sourates = sourates()) # sourates() sont toutes les sourates ?
 
 @app.route('/login',methods = ['POST', 'GET']) # Here wher we put if is a post or get request
 def login():
@@ -20,11 +20,12 @@ def login():
       sourate = request.form['sourate'] 
       return redirect(url_for('sourate', sourate = sourate)) # On redirige vers la page sourate avec le nom de la sourate
    else:
-      return render_template('index.html')
+      return render_template('login.html')
 
 @app.route('/sourate/<sourate>')
 def sourate(sourate):
-   return render_template('index.html', titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
+   return render_template('index.html',len = long(quran_text_ar(escape(sourate))), titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
+
 # Possibilite de voir les hadiths...
 @app.route('/hadith', methods = ['POST', 'GET'])
 def hadith():

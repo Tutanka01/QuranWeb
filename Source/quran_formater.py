@@ -12,14 +12,17 @@ def quran_text_fr(nom): # Donne le nom du chapitre
             return sourate
 
 def quran_text_ar(nom : str): # Donne le nom du chapitre
-    sourate = ""
+    #sourate = ""
+    sourate_lst = []
     for i in range(len(data["sourates"])): # Il faut bien mettre "sourates"
         if data["sourates"][i]["nom_phonetique"] == nom:
             print("hello")
             for k in range(len(data["sourates"][i]["versets"])):
-                sourate += data["sourates"][i]["versets"][k]["text_arabe"] + "\n" 
-                
-            return sourate
+                #sourate += data["sourates"][i]["versets"][k]["text_arabe"] + "\n" 
+                sourate_lst.append(data["sourates"][i]["versets"][k]["text_arabe"])
+            return sourate_lst
+def long(fonction):
+    return len(fonction)
 
 def sourates(): # Donne la nom de tous les sourats en forme de liste
     sourate = []
