@@ -24,6 +24,13 @@ body {
     src: url('AlQalamQuran.ttf');
 }
 
+/* Pour afficher les chiffres en arabe */
+@font-face {
+    font-family: 'Arabic Numbers';
+    src: local('Arial');
+    unicode-range: U+0030-U+0039;
+  }
+
 .quran {
     text-align: right;
     font-family: 'Al-Qalam', sans-serif;
@@ -40,12 +47,32 @@ body {
     padding: 20px;
     background-color: #fff;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.ayat-number {
+    position: relative;
+    top: -25px;
+    right: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arabic Numbers';
+    text-align: center;
 }
 
 .quran span {
     display: inline-block;
     padding: 5px;
 }
+
 .quran .verse-number {
     margin-right: 10px;
     background-color: #000;
@@ -54,9 +81,11 @@ body {
     font-size: 0.7rem;
     padding: 3px 6px;
 }
+
 .quran .highlight {
     background-color: yellow;
 }
+
 .quran .chapter-name {
     text-align: center;
     margin: 0;
@@ -64,10 +93,12 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 .quran .chapter-name span {
     font-size: 1rem;
     font-weight: normal;
 }
+
 .quran .options {
     display: flex;
     justify-content: space-between;
@@ -75,6 +106,7 @@ body {
     margin-bottom: 20px;
     font-size: 0.8rem;
 }
+
 .quran .options select {
     padding: 5px;
 }

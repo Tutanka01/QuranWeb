@@ -22,11 +22,15 @@
             </div>
             <div class="quran" id="quran-text">
                 {% for i in range(0, len) %} 
-                    <div class="ayat"> {{ sourate_texte[i] }}</div>
+                    <div class="ayat">
+                        <div class="ayat-number">{{ i + 1}}</div>
+                        {{ sourate_texte[i] }}
+                    </div>
                 {% endfor %}
             </div>
         </div>
         <script>
+            
             function changeFontSize(element) {
                 const quranText = document.getElementById('quran-text');
                 quranText.style.fontSize = element.value;
