@@ -20,9 +20,11 @@
                     </select>
                 </div>
             </div>
-            {% for i in range(0, len) %} 
-                <div class="quran" id="quran-text"> {{ sourate_texte[i] }}</div>
-            {% endfor %}
+            <div class="quran" id="quran-text">
+                {% for i in range(0, len) %} 
+                    <div class="ayat"> {{ sourate_texte[i] }}</div>
+                {% endfor %}
+            </div>
         </div>
         <script>
             function changeFontSize(element) {
