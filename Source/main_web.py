@@ -24,7 +24,7 @@ def login():
 
 @app.route('/sourate/<sourate>')
 def sourate(sourate):
-   return render_template('index.html',len = long(quran_text_ar(escape(sourate))), titre = escape(sourate), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
+   return render_template('index.html',len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
 
 # Possibilite de voir les hadiths...
 @app.route('/hadith', methods = ['POST', 'GET'])

@@ -21,6 +21,7 @@ def quran_text_ar(nom : str): # Donne le nom du chapitre
                 #sourate += data["sourates"][i]["versets"][k]["text_arabe"] + "\n" 
                 sourate_lst.append(data["sourates"][i]["versets"][k]["text_arabe"])
             return sourate_lst
+        
 def long(fonction):
     return len(fonction)
 
@@ -29,3 +30,8 @@ def sourates(): # Donne la nom de tous les sourats en forme de liste
     for i in range(len(data["sourates"])):
         sourate.append(data["sourates"][i]["nom_phonetique"])
     return sourate
+
+def nom_sourate_arabe(nom): # Donne le nom de la sourate en arabe
+    for i in range(len(data["sourates"])):
+        if data["sourates"][i]["nom_phonetique"] == nom:
+            return data["sourates"][i]["nom"]

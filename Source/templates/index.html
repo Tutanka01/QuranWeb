@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="chapter-name"> {{ nom_sourate }} <span>({{ titre }})</span></h1>
+            <h1 class="chapter-name"> {{ nom_sourate }} <span>({{ nom_sourate_arabe }})</span></h1>
             <div class="options">
                 <div>Changer la taille du texte : 
                     <select onchange="changeFontSize(this)">
@@ -24,7 +24,7 @@
                 {% for i in range(0, len) %} 
                     <div class="ayat">
                         <div class="ayat-number">{{ i + 1}}</div>
-                        {{ sourate_texte[i] }}
+                        <div>{{ sourate_texte[i] }}</div>
                     </div>
                 {% endfor %}
             </div>
