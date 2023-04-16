@@ -9,16 +9,18 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="chapter-name"> {{ nom_sourate }} <span>({{ nom_sourate_arabe }})</span></h1>
-            <div class="options">
-                <div>Changer la taille du texte : 
-                    <select onchange="changeFontSize(this)">
-                        <option value="25px">Petit</option>
-                        <option value="35px" selected>Moyen</option>
-                        <option value="45px">Grand</option>
-                        <option value="55px">Très grand</option>
-                    </select>
-                </div>
+            <div class="title">
+                <h1 class="chapter-name"> {{ nom_sourate }} <span>({{ nom_sourate_arabe }})</span></h1>
+                <div class="options">
+                    <div>Changer la taille du texte : 
+                        <select onchange="changeFontSize(this)">
+                            <option value="25px">Petit</option>
+                            <option value="35px" selected>Moyen</option>
+                            <option value="45px">Grand</option>
+                            <option value="55px">Très grand</option>
+                        </select>
+                    </div>
+                </div>  
             </div>
             <div class="quran" id="quran-text">
                 {% for i in range(0, len) %} 
@@ -30,7 +32,6 @@
             </div>
         </div>
         <script>
-            
             function changeFontSize(element) {
                 const quranText = document.getElementById('quran-text');
                 quranText.style.fontSize = element.value;

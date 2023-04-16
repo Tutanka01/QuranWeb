@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="script" href="{{ url_for('static', filename = 'script_login.js') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename = 'styles_login.css') }}">
-  
   <title>{{ titre }}</title>
 </head>
 
@@ -37,7 +34,8 @@
  <div class="center">
   <div class="lsite">
     <ul> 
-      {% for i in range(0, len) %} 
+      {% for i in range(0, len) %}
+        <div class="ayat-number">{{i + 1}}</div>
         <li class="sourate-item">{{ sourates[i] }}</li> 
       {% endfor %} 
     </ul> 

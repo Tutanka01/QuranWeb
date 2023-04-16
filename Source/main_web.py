@@ -26,15 +26,5 @@ def login():
 def sourate(sourate):
    return render_template('index.html',len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)))
 
-# Possibilite de voir les hadiths...
-@app.route('/hadith', methods = ['POST', 'GET'])
-def hadith():
-   if request.method == 'POST':
-      hadith = request.form['hadith']
-      return redirect(url_for('hadith', hadith = 'test')) # A chenger
-   else:
-      return render_template('hadith.html', hadith = 'test') # A changer
-      
-
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)
