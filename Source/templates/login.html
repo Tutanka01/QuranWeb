@@ -35,9 +35,11 @@
   <div class="lsite">
     <ul> 
       {% for i in range(0, len) %}
-        <div class="ayat-number">{{i + 1}}</div>
+      <div class="container_sourates">
+        <div class="sourates-number">{{i + 1}}</div>
         <li class="sourate-item">{{ sourates[i] }}</li> 
-      {% endfor %} 
+      </div>
+        {% endfor %} 
     </ul> 
   </div>
 </div>

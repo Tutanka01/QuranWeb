@@ -20,22 +20,34 @@
                             <option value="55px">Très grand</option>
                         </select>
                     </div>
+                    <div class="options">
+                        <button onclick="toggleTranslation()">Traduction en français</button>
+                    </div>
                 </div>  
             </div>
-            <div class="quran" id="quran-text">
+            <div class="quran">
                 {% for i in range(0, len) %} 
                     <div class="ayat">
-                        <div class="ayat-number">{{ i + 1}}</div>
-                        <div>{{ sourate_texte[i] }}</div>
+                        <div class="ayat-number">{{i + 1}}</div>
+                        <div name="quran-text">{{sourate_texte[i]}}</div>
+                        <div class="translation">{{sourate_translation[i] }}</div>
                     </div>
                 {% endfor %}
             </div>
         </div>
         <script>
             function changeFontSize(element) {
-                const quranText = document.getElementById('quran-text');
-                quranText.style.fontSize = element.value;
-            }
+                const quranText = document.querySelectorAll('[name=quran-text]');
+                quranText.forEach(text => {
+                  text.style.fontSize = element.value;
+                });
+              } 
+            function toggleTranslation() {
+                const translations = document.querySelectorAll('.translation');
+                translations.forEach(t => {
+                  t.style.display = (t.style.display === 'none') ? 'inline' : 'none';
+                });
+              }
         </script>
     </body>
 </html>
