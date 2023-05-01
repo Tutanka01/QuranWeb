@@ -1,6 +1,6 @@
 # Choses a modifier et/ou ajouter :
-- [x] Le numero de la ayah (URGENT !!)
-- [ ] Ajouter le hadith du jour
+- [x] Le numero de la ayah (URGENT !!) (a moitie fait les num des ayat se deforment)
+- [ ] Ajouter le hadith du jour (Jsp si faire ou pas)
 - [x] Fonction de recherche
 - [x] Possibilité de changer la langue (arabe, francais, (anglais ??))
 - [ ] Pouvoir cherches les hadiths par nom de livre (il faudrait avant d'ajouter la fonctionnalite de chercher des hadiths)
