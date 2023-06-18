@@ -32,19 +32,3 @@ def traduction(texte): # Traduit le texte en français
 def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le met en forme
     # Add a title to the hadith
     return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
-
-def main(): # Fonction principale qui demande à l'utilisateur ce qu'il veut et renvoie le hadith traduit
-    Livre = input("Quel livre voulez-vous ?, le titre en entier : ")
-    hadith = int(input("Quel hadith voulez-vous ?, en num : "))
-    choix = input("Voulez-vous le traduire en français ? (y/n) : ")
-    hadith -= 1
-    if choix == "y":
-        try:
-            return hadiths_beautyfier(traduction(hadiths(Livre, hadith)), by(Livre, hadith), chapters(Livre, hadith))
-        except:
-            return "Ce que vous avez saisi n'existe pas"
-    else:
-        try:
-            return hadiths_beautyfier(hadiths(Livre, hadith), by(Livre, hadith), chapters(Livre, hadith))
-        except:
-            return "Ce que vous avez saisi n'existe pas"

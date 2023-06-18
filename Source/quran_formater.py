@@ -15,7 +15,6 @@ def quran_text_ar(nom : str): # Donne le nom du chapitre
     sourate_lst = []
     for i in range(len(data["sourates"])): # Il faut bien mettre "sourates"
         if data["sourates"][i]["nom_phonetique"] == nom:
-            print("hello")
             for k in range(len(data["sourates"][i]["versets"])): 
                 sourate_lst.append(data["sourates"][i]["versets"][k]["text_arabe"])
             return sourate_lst
