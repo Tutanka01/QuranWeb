@@ -1,10 +1,12 @@
 # Choses a modifier et/ou ajouter :
-- [x] Le numero de la ayah (URGENT !!) (a moitie fait les num des ayat se deforment)
-- [ ] Ajouter le hadith du jour (Jsp si faire ou pas)
-- [x] Fonction de recherche
-- [x] Possibilité de changer la langue (arabe, francais, (anglais ??))
-- [ ] Pouvoir cherches les hadiths par nom de livre (il faudrait avant d'ajouter la fonctionnalite de chercher des hadiths)
-- [x] Mettre peut etre le css dans des fichiers a part ;)
+
+- [x] Que le num des ayat se deforment pas
+- [ ] Ajouter une page d'acceuil avec le choix hadiths ou quran
+- [ ] Ajouter un systeme de login pour que les gens puissent enregistrer leur progression
+  - Pas tres urgent :
+- [ ] Ajouter un systeme de recherche pour les hadiths
+- [ ] Ajouter un systeme de recherche pour le quran par ayat/mot (sourate deja fait)
+
 # Bukhary_TEST
 - J'essaie de faire un truc sympa avec le fichier json avec la sunnah écrite par AlBukhary(ra)
 - Imagine quand meme une AI qui permet de voir si t'as bien recite ou pas, juste imagine (Tarteel)
