@@ -32,3 +32,14 @@ def nom_sourate_arabe(nom): # Donne le nom de la sourate en arabe
     for i in range(len(data["sourates"])):
         if data["sourates"][i]["nom_phonetique"] == nom:
             return data["sourates"][i]["nom"]
+        
+def nom_audio(nom): # Donne le nom de l'audio
+    for i in range(len(data["sourates"])):
+        if data["sourates"][i]["nom_phonetique"] == nom:
+            return data["sourates"][i]["nom_audio"]
+        
+def get_audio_path(sourate):
+    audio_filename = nom_audio(sourate)
+    audio_path = "url_for('static', filename='recitation/' + ",audio_filename,")"
+    return audio_path
+

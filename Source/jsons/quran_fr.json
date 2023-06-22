@@ -4,6 +4,7 @@
         "position": 1,
         "nom": "سورة الفاتحة",
         "nom_phonetique": "Al-Faatiha",
+        "nom_audio":"001-al-fatihah.mp3",
         "englishNameTranslation": "The Opening",
         "revelation": "Mecquoise",
         "versets": [
@@ -98,6 +99,7 @@
         "position": 2,
         "nom": "سورة البقرة",
         "nom_phonetique": "Al-Baqara",
+        "nom_audio":"002-al-baqarah.mp3",
         "englishNameTranslation": "The Cow",
         "revelation": "Medinois",
         "versets": [
@@ -3540,6 +3542,7 @@
         "position": 3,
         "nom": "سورة آل عمران",
         "nom_phonetique": "Aal-i-Imraan",
+        "nom_audio":"003-al-imran.mp3",
         "englishNameTranslation": "The Family of Imraan",
         "revelation": "Medinois",
         "versets": [
@@ -5950,6 +5953,7 @@
         "position": 4,
         "nom": "سورة النساء",
         "nom_phonetique": "An-Nisaa",
+        "nom_audio": "004-an-nisa.mp3" ,
         "englishNameTranslation": "The Women",
         "revelation": "Medinois",
         "versets": [
@@ -8072,6 +8076,7 @@
         "position": 5,
         "nom": "سورة المائدة",
         "nom_phonetique": "Al-Maaida",
+        "nom_audio": "005-al-maidah.mp3" ,
         "englishNameTranslation": "The Table",
         "revelation": "Medinois",
         "versets": [
@@ -9523,6 +9528,7 @@
         "nom": "سورة الأنعام",
         "nom_phonetique": "Al-An'aam",
         "englishNameTranslation": "The Cattle",
+        "nom_audio": "006-al-anam.mp3" ,
         "revelation": "Mecquoise",
         "versets": [
           {
@@ -11513,6 +11519,7 @@
         "nom": "سورة الأعراف",
         "nom_phonetique": "Al-A'raaf",
         "englishNameTranslation": "The Heights",
+        "nom_audio": "007-al-araf.mp3" ,
         "revelation": "Mecquoise",
         "versets": [
           {
@@ -13998,6 +14005,7 @@
         "position": 8,
         "nom": "سورة الأنفال",
         "nom_phonetique": "Al-Anfaal",
+        "nom_audio": "008-al-anfal.mp3" ,
         "englishNameTranslation": "The Spoils of War",
         "revelation": "Medinois",
         "versets": [
@@ -14908,6 +14916,7 @@
         "position": 9,
         "nom": "سورة التوبة",
         "nom_phonetique": "At-Tawba",
+        "nom_audio": "009-at-taubah.mp3" ,
         "englishNameTranslation": "The Repentance",
         "revelation": "Medinois",
         "versets": [
@@ -16466,6 +16475,7 @@
         "position": 10,
         "nom": "سورة يونس",
         "nom_phonetique": "Yunus",
+        "nom_audio": "010-yunus.mp3" ,
         "englishNameTranslation": "Jonas",
         "revelation": "Mecquoise",
         "versets": [
@@ -17784,6 +17794,7 @@
         "position": 11,
         "nom": "سورة هود",
         "nom_phonetique": "Hud",
+        "nom_audio": "011-hud.mp3" ,
         "englishNameTranslation": "Hud",
         "revelation": "Mecquoise",
         "versets": [
@@ -19270,6 +19281,7 @@
         "position": 12,
         "nom": "سورة يوسف",
         "nom_phonetique": "Yusuf",
+        "nom_audio": "012-yusuf.mp3" ,
         "englishNameTranslation": "Joseph",
         "revelation": "Mecquoise",
         "versets": [
@@ -20612,6 +20624,7 @@
         "position": 13,
         "nom": "سورة الرعد",
         "nom_phonetique": "Ar-Ra'd",
+        "nom_audio": "013-ar-rad.mp3" ,
         "englishNameTranslation": "The Thunder",
         "revelation": "Medinois",
         "versets": [
@@ -21142,6 +21155,7 @@
         "position": 14,
         "nom": "سورة ابراهيم",
         "nom_phonetique": "Ibrahim",
+        "nom_audio": "014-ibrahim.mp3" ,
         "englishNameTranslation": "Abraham",
         "revelation": "Mecquoise",
         "versets": [
@@ -21776,6 +21790,7 @@
         "position": 15,
         "nom": "سورة الحجر",
         "nom_phonetique": "Al-Hijr",
+        "nom_audio": "015-al-hijr.mp3" ,
         "englishNameTranslation": "The Rock",
         "revelation": "Mecquoise",
         "versets": [
@@ -22974,6 +22989,7 @@
         "position": 16,
         "nom": "سورة النحل",
         "nom_phonetique": "An-Nahl",
+        "nom_audio": "016-an-nahl.mp3" ,
         "englishNameTranslation": "The Bee",
         "revelation": "Mecquoise",
         "versets": [
@@ -24524,6 +24540,7 @@
         "position": 17,
         "nom": "سورة الإسراء",
         "nom_phonetique": "Al-Israa",
+        "nom_audio": "017-al-isra.mp3" ,
         "englishNameTranslation": "The Night Journey",
         "revelation": "Mecquoise",
         "versets": [
@@ -25870,6 +25887,7 @@
         "position": 18,
         "nom": "سورة الكهف",
         "nom_phonetique": "Al-Kahf",
+        "nom_audio": "018-al-kahf.mp3" ,
         "englishNameTranslation": "The Cave",
         "revelation": "Mecquoise",
         "versets": [
@@ -27200,6 +27218,7 @@
         "position": 19,
         "nom": "سورة مريم",
         "nom_phonetique": "Maryam",
+        "nom_audio": "019-maryam.mp3" ,
         "englishNameTranslation": "Mary",
         "revelation": "Mecquoise",
         "versets": [
@@ -28390,6 +28409,7 @@
         "position": 20,
         "nom": "سورة طه",
         "nom_phonetique": "Taa-Haa",
+        "nom_audio": "020-ta-ha.mp3" ,
         "englishNameTranslation": "Taa-Haa",
         "revelation": "Mecquoise",
         "versets": [
@@ -30020,6 +30040,7 @@
         "position": 21,
         "nom": "سورة الأنبياء",
         "nom_phonetique": "Al-Anbiyaa",
+        "nom_audio": "021-al-anbiya.mp3" ,
         "englishNameTranslation": "The Prophets",
         "revelation": "Mecquoise",
         "versets": [
@@ -31374,6 +31395,7 @@
         "position": 22,
         "nom": "سورة الحج",
         "nom_phonetique": "Al-Hajj",
+        "nom_audio": "022-al-hajj.mp3" ,
         "englishNameTranslation": "The Pilgrimage",
         "revelation": "Medinois",
         "versets": [
@@ -32328,6 +32350,7 @@
         "position": 23,
         "nom": "سورة المؤمنون",
         "nom_phonetique": "Al-Muminoon",
+        "nom_audio": "023-al-muminun.mp3" ,
         "englishNameTranslation": "The Believers",
         "revelation": "Mecquoise",
         "versets": [
@@ -33754,6 +33777,7 @@
         "position": 24,
         "nom": "سورة النور",
         "nom_phonetique": "An-Noor",
+        "nom_audio": "024-an-nur.mp3" ,
         "englishNameTranslation": "The Light",
         "revelation": "Medinois",
         "versets": [
@@ -34532,6 +34556,7 @@
         "position": 25,
         "nom": "سورة الفرقان",
         "nom_phonetique": "Al-Furqaan",
+        "nom_audio": "025-al-furqan.mp3" ,
         "englishNameTranslation": "The Criterion",
         "revelation": "Mecquoise",
         "versets": [
@@ -35470,6 +35495,7 @@
         "position": 26,
         "nom": "سورة الشعراء",
         "nom_phonetique": "Ash-Shu'araa",
+        "nom_audio": "026-ash-shuara.mp3" ,
         "englishNameTranslation": "The Poets",
         "revelation": "Mecquoise",
         "versets": [
@@ -38204,6 +38230,7 @@
         "position": 27,
         "nom": "سورة النمل",
         "nom_phonetique": "An-Naml",
+        "nom_audio": "027-an-naml.mp3" ,
         "englishNameTranslation": "The Ant",
         "revelation": "Mecquoise",
         "versets": [
@@ -39334,6 +39361,7 @@
         "position": 28,
         "nom": "سورة القصص",
         "nom_phonetique": "Al-Qasas",
+        "nom_audio": "028-al-qasas.mp3" ,
         "englishNameTranslation": "The Stories",
         "revelation": "Mecquoise",
         "versets": [
@@ -40400,6 +40428,7 @@
         "position": 29,
         "nom": "سورة العنكبوت",
         "nom_phonetique": "Al-Ankaboot",
+        "nom_audio": "029-al-ankabut.mp3" ,
         "englishNameTranslation": "The Spider",
         "revelation": "Mecquoise",
         "versets": [
@@ -41238,6 +41267,7 @@
         "position": 30,
         "nom": "سورة الروم",
         "nom_phonetique": "Ar-Room",
+        "nom_audio": "030-ar-rum.mp3" ,
         "englishNameTranslation": "The Romans",
         "revelation": "Mecquoise",
         "versets": [
@@ -41968,6 +41998,7 @@
         "position": 31,
         "nom": "سورة لقمان",
         "nom_phonetique": "Luqman",
+        "nom_audio": "031-luqman.mp3" ,
         "englishNameTranslation": "Luqman",
         "revelation": "Mecquoise",
         "versets": [
@@ -42386,6 +42417,7 @@
         "position": 32,
         "nom": "سورة السجدة",
         "nom_phonetique": "As-Sajda",
+        "nom_audio": "032-as-sajdah.mp3" ,
         "englishNameTranslation": "The Prostration",
         "revelation": "Mecquoise",
         "versets": [
@@ -42760,6 +42792,7 @@
         "position": 33,
         "nom": "سورة الأحزاب",
         "nom_phonetique": "Al-Ahzaab",
+        "nom_audio": "033-al-ahzab.mp3" ,
         "englishNameTranslation": "The Clans",
         "revelation": "Medinois",
         "versets": [
@@ -43646,6 +43679,7 @@
         "position": 34,
         "nom": "سورة سبإ",
         "nom_phonetique": "Saba",
+        "nom_audio": "034-saba.mp3" ,
         "englishNameTranslation": "Sheba",
         "revelation": "Mecquoise",
         "versets": [
@@ -44304,6 +44338,7 @@
         "position": 35,
         "nom": "سورة فاطر",
         "nom_phonetique": "Faatir",
+        "nom_audio": "035-fatir.mp3" ,
         "englishNameTranslation": "The Originator",
         "revelation": "Mecquoise",
         "versets": [
@@ -44854,6 +44889,7 @@
         "position": 36,
         "nom": "سورة يس",
         "nom_phonetique": "Yaseen",
+        "nom_audio": "036-ya-sin.mp3" ,
         "englishNameTranslation": "Yaseen",
         "revelation": "Mecquoise",
         "versets": [
@@ -45860,6 +45896,7 @@
         "position": 37,
         "nom": "سورة الصافات",
         "nom_phonetique": "As-Saaffaat",
+        "nom_audio": "037-as-saffat.mp3" ,
         "englishNameTranslation": "Those drawn up in Ranks",
         "revelation": "Mecquoise",
         "versets": [
@@ -48054,6 +48091,7 @@
         "position": 38,
         "nom": "سورة ص",
         "nom_phonetique": "Saad",
+        "nom_audio": "038-sad.mp3" ,
         "englishNameTranslation": "The letter Saad",
         "revelation": "Mecquoise",
         "versets": [
@@ -49124,6 +49162,7 @@
         "position": 39,
         "nom": "سورة الزمر",
         "nom_phonetique": "Az-Zumar",
+        "nom_audio": "039-az-zumar.mp3" ,
         "englishNameTranslation": "The Groups",
         "revelation": "Mecquoise",
         "versets": [
@@ -50034,6 +50073,7 @@
         "position": 40,
         "nom": "سورة غافر",
         "nom_phonetique": "Ghafir",
+        "nom_audio": "040-ghafir.mp3" ,
         "englishNameTranslation": "The Forgiver",
         "revelation": "Mecquoise",
         "versets": [
@@ -51064,6 +51104,7 @@
         "position": 41,
         "nom": "سورة فصلت",
         "nom_phonetique": "Fussilat",
+        "nom_audio": "041-fussilat.mp3" ,
         "englishNameTranslation": "Explained in detail",
         "revelation": "Mecquoise",
         "versets": [
@@ -51726,6 +51767,7 @@
         "position": 42,
         "nom": "سورة الشورى",
         "nom_phonetique": "Ash-Shura",
+        "nom_audio": "042-ash-shura.mp3" ,
         "englishNameTranslation": "Consultation",
         "revelation": "Mecquoise",
         "versets": [
@@ -52372,6 +52414,7 @@
         "position": 43,
         "nom": "سورة الزخرف",
         "nom_phonetique": "Az-Zukhruf",
+        "nom_audio": "043-az-zukhruf.mp3" ,
         "englishNameTranslation": "Ornaments of gold",
         "revelation": "Mecquoise",
         "versets": [
@@ -53450,6 +53493,7 @@
         "position": 44,
         "nom": "سورة الدخان",
         "nom_phonetique": "Ad-Dukhaan",
+        "nom_audio": "044-ad-dukhan.mp3" ,
         "englishNameTranslation": "The Smoke",
         "revelation": "Mecquoise",
         "versets": [
@@ -54168,6 +54212,7 @@
         "position": 45,
         "nom": "سورة الجاثية",
         "nom_phonetique": "Al-Jaathiya",
+        "nom_audio": "045-al-jathiyah.mp3" ,
         "englishNameTranslation": "Crouching",
         "revelation": "Mecquoise",
         "versets": [
@@ -54622,6 +54667,7 @@
         "position": 46,
         "nom": "سورة الأحقاف",
         "nom_phonetique": "Al-Ahqaf",
+        "nom_audio": "046-al-ahqaf.mp3" ,
         "englishNameTranslation": "The Dunes",
         "revelation": "Mecquoise",
         "versets": [
@@ -55052,6 +55098,7 @@
         "position": 47,
         "nom": "سورة محمد",
         "nom_phonetique": "Muhammad",
+        "nom_audio": "047-muhammad.mp3" ,
         "englishNameTranslation": "Muhammad",
         "revelation": "Medinois",
         "versets": [
@@ -55518,6 +55565,7 @@
         "position": 48,
         "nom": "سورة الفتح",
         "nom_phonetique": "Al-Fath",
+        "nom_audio": "048-al-fath.mp3" ,
         "englishNameTranslation": "The Victory",
         "revelation": "Medinois",
         "versets": [
@@ -55876,6 +55924,7 @@
         "position": 49,
         "nom": "سورة الحجرات",
         "nom_phonetique": "Al-Hujuraat",
+        "nom_audio": "049-al-hujurat.mp3" ,
         "englishNameTranslation": "The Inner Apartments",
         "revelation": "Medinois",
         "versets": [
@@ -56102,6 +56151,7 @@
         "position": 50,
         "nom": "سورة ق",
         "nom_phonetique": "Qaaf",
+        "nom_audio": "050-qaf.mp3" ,
         "englishNameTranslation": "The letter Qaaf",
         "revelation": "Mecquoise",
         "versets": [
@@ -56652,6 +56702,7 @@
         "position": 51,
         "nom": "سورة الذاريات",
         "nom_phonetique": "Adh-Dhaariyat",
+        "nom_audio": "051-adh-dhariyat.mp3" ,
         "englishNameTranslation": "The Winnowing Winds",
         "revelation": "Mecquoise",
         "versets": [
@@ -57382,6 +57433,7 @@
         "position": 52,
         "nom": "سورة الطور",
         "nom_phonetique": "At-Tur",
+        "nom_audio": "052-at-tur.mp3" ,
         "englishNameTranslation": "The Mount",
         "revelation": "Mecquoise",
         "versets": [
@@ -57981,6 +58033,7 @@
         "nom": "سورة النجم",
         "nom_phonetique": "An-Najm",
         "englishNameTranslation": "The Star",
+        "nom_audio": "053-an-najm.mp3" ,
         "revelation": "Mecquoise",
         "versets": [
           {
@@ -58739,6 +58792,7 @@
         "nom": "سورة القمر",
         "nom_phonetique": "Al-Qamar",
         "englishNameTranslation": "The Moon",
+        "nom_audio": "054-al-qamar.mp3" ,
         "revelation": "Mecquoise",
         "versets": [
           {
@@ -59408,6 +59462,7 @@
         "position": 55,
         "nom": "سورة الرحمن",
         "nom_phonetique": "Ar-Rahmaan",
+        "nom_audio": "055-ar-rahman.mp3" ,
         "englishNameTranslation": "The Beneficent",
         "revelation": "Medinois",
         "versets": [
@@ -60354,6 +60409,7 @@
         "position": 56,
         "nom": "سورة الواقعة",
         "nom_phonetique": "Al-Waaqia",
+        "nom_audio": "056-al-waqiah.mp3" ,
         "englishNameTranslation": "The Inevitable",
         "revelation": "Mecquoise",
         "versets": [
@@ -61516,6 +61572,7 @@
         "position": 57,
         "nom": "سورة الحديد",
         "nom_phonetique": "Al-Hadid",
+        "nom_audio": "057-al-hadid.mp3" ,
         "englishNameTranslation": "The Iron",
         "revelation": "Medinois",
         "versets": [
@@ -61874,6 +61931,7 @@
         "position": 58,
         "nom": "سورة المجادلة",
         "nom_phonetique": "Al-Mujaadila",
+        "nom_audio": "058-al-mujadilah.mp3" ,
         "englishNameTranslation": "The Pleading Woman",
         "revelation": "Medinois",
         "versets": [
@@ -62148,6 +62206,7 @@
         "position": 59,
         "nom": "سورة الحشر",
         "nom_phonetique": "Al-Hashr",
+        "nom_audio": "059-al-hashr.mp3" ,
         "englishNameTranslation": "The Exile",
         "revelation": "Medinois",
         "versets": [
@@ -62446,6 +62505,7 @@
         "position": 60,
         "nom": "سورة الممتحنة",
         "nom_phonetique": "Al-Mumtahana",
+        "nom_audio": "060-al-mumtahanah.mp3" ,
         "englishNameTranslation": "She that is to be examined",
         "revelation": "Medinois",
         "versets": [
@@ -62612,6 +62672,7 @@
         "position": 61,
         "nom": "سورة الصف",
         "nom_phonetique": "As-Saff",
+        "nom_audio": "061-as-saff.mp3" ,
         "englishNameTranslation": "The Ranks",
         "revelation": "Medinois",
         "versets": [
@@ -62790,6 +62851,7 @@
         "position": 62,
         "nom": "سورة الجمعة",
         "nom_phonetique": "Al-Jumu'a",
+        "nom_audio": "062-al-jumuah.mp3" ,
         "englishNameTranslation": "Friday",
         "revelation": "Medinois",
         "versets": [
@@ -62932,6 +62994,7 @@
         "position": 63,
         "nom": "سورة المنافقون",
         "nom_phonetique": "Al-Munaafiqoon",
+        "nom_audio": "063-al-munafiqun.mp3" ,
         "englishNameTranslation": "The Hypocrites",
         "revelation": "Medinois",
         "versets": [
@@ -63074,6 +63137,7 @@
         "position": 64,
         "nom": "سورة التغابن",
         "nom_phonetique": "At-Taghaabun",
+        "nom_audio": "064-at-taghabun.mp3" ,
         "englishNameTranslation": "Mutual Disillusion",
         "revelation": "Medinois",
         "versets": [
@@ -63300,6 +63364,7 @@
         "position": 65,
         "nom": "سورة الطلاق",
         "nom_phonetique": "At-Talaaq",
+        "nom_audio": "065-at-talaq.mp3" ,
         "englishNameTranslation": "Divorce",
         "revelation": "Medinois",
         "versets": [
@@ -63455,6 +63520,7 @@
         "nom": "سورة التحريم",
         "nom_phonetique": "At-Tahrim",
         "englishNameTranslation": "The Prohibition",
+        "nom_audio": "066-at-tahrim.mp3" ,
         "revelation": "Medinois",
         "versets": [
           {
@@ -63608,6 +63674,7 @@
         "position": 67,
         "nom": "سورة الملك",
         "nom_phonetique": "Al-Mulk",
+        "nom_audio": "067-al-mulk.mp3" ,
         "englishNameTranslation": "The Sovereignty",
         "revelation": "Mecquoise",
         "versets": [
@@ -63978,6 +64045,7 @@
         "position": 68,
         "nom": "سورة القلم",
         "nom_phonetique": "Al-Qalam",
+        "nom_audio": "068-al-qalam.mp3" ,
         "englishNameTranslation": "The Pen",
         "revelation": "Mecquoise",
         "versets": [
@@ -64612,6 +64680,7 @@
         "position": 69,
         "nom": "سورة الحاقة",
         "nom_phonetique": "Al-Haaqqa",
+        "nom_audio": "069-al-haqqah.mp3" ,
         "englishNameTranslation": "The Reality",
         "revelation": "Mecquoise",
         "versets": [
@@ -65246,6 +65315,7 @@
         "position": 70,
         "nom": "سورة المعارج",
         "nom_phonetique": "Al-Ma'aarij",
+        "nom_audio": "070-al-maarij.mp3" ,
         "englishNameTranslation": "The Ascending Stairways",
         "revelation": "Mecquoise",
         "versets": [
@@ -65784,6 +65854,7 @@
         "position": 71,
         "nom": "سورة نوح",
         "nom_phonetique": "Nooh",
+        "nom_audio": "071-nuh.mp3" ,
         "englishNameTranslation": "Noah",
         "revelation": "Mecquoise",
         "versets": [
@@ -66130,6 +66201,7 @@
         "position": 72,
         "nom": "سورة الجن",
         "nom_phonetique": "Al-Jinn",
+        "nom_audio": "072-al-jinn.mp3" ,
         "englishNameTranslation": "The Jinn",
         "revelation": "Mecquoise",
         "versets": [
@@ -66476,6 +66548,7 @@
         "position": 73,
         "nom": "سورة المزمل",
         "nom_phonetique": "Al-Muzzammil",
+        "nom_audio": "073-al-muzammil.mp3" ,
         "englishNameTranslation": "The Enshrouded One",
         "revelation": "Mecquoise",
         "versets": [
@@ -66726,6 +66799,7 @@
         "position": 74,
         "nom": "سورة المدثر",
         "nom_phonetique": "Al-Muddaththir",
+        "nom_audio": "074-al-muddaththir.mp3" ,
         "englishNameTranslation": "The Cloaked One",
         "revelation": "Mecquoise",
         "versets": [
@@ -67408,6 +67482,7 @@
         "position": 75,
         "nom": "سورة القيامة",
         "nom_phonetique": "Al-Qiyaama",
+        "nom_audio": "075-al-qiyamah.mp3" ,
         "englishNameTranslation": "The Resurrection",
         "revelation": "Mecquoise",
         "versets": [
@@ -67898,6 +67973,7 @@
         "position": 76,
         "nom": "سورة الانسان",
         "nom_phonetique": "Al-Insaan",
+        "nom_audio": "076-al-insan.mp3" ,
         "englishNameTranslation": "Man",
         "revelation": "Medinois",
         "versets": [
@@ -68280,6 +68356,7 @@
         "position": 77,
         "nom": "سورة المرسلات",
         "nom_phonetique": "Al-Mursalaat",
+        "nom_audio": "077-al-mursalat.mp3" ,
         "englishNameTranslation": "The Emissaries",
         "revelation": "Mecquoise",
         "versets": [
@@ -68890,6 +68967,7 @@
         "position": 78,
         "nom": "سورة النبإ",
         "nom_phonetique": "An-Naba",
+        "nom_audio": "078-an-naba.mp3" ,
         "englishNameTranslation": "The Announcement",
         "revelation": "Mecquoise",
         "versets": [
@@ -69380,6 +69458,7 @@
         "position": 79,
         "nom": "سورة النازعات",
         "nom_phonetique": "An-Naazi'aat",
+        "nom_audio": "079-an-naziat.mp3" ,
         "englishNameTranslation": "Those who drag forth",
         "revelation": "Mecquoise",
         "versets": [
@@ -69942,6 +70021,7 @@
         "position": 80,
         "nom": "سورة عبس",
         "nom_phonetique": "Abasa",
+        "nom_audio": "080-abasa.mp3" ,
         "englishNameTranslation": "He frowned",
         "revelation": "Mecquoise",
         "versets": [
@@ -70456,6 +70536,7 @@
         "position": 81,
         "nom": "سورة التكوير",
         "nom_phonetique": "At-Takwir",
+        "nom_audio": "081-at-takwir.mp3" ,
         "englishNameTranslation": "The Overthrowing",
         "revelation": "Mecquoise",
         "versets": [
@@ -70814,6 +70895,7 @@
         "position": 82,
         "nom": "سورة الإنفطار",
         "nom_phonetique": "Al-Infitaar",
+        "nom_audio": "082-al-infitar.mp3" ,
         "englishNameTranslation": "The Cleaving",
         "revelation": "Mecquoise",
         "versets": [
@@ -71052,6 +71134,7 @@
         "position": 83,
         "nom": "سورة المطففين",
         "nom_phonetique": "Al-Mutaffifin",
+        "nom_audio": "083-al-mutaffifin.mp3" ,
         "englishNameTranslation": "Defrauding",
         "revelation": "Mecquoise",
         "versets": [
@@ -71494,6 +71577,7 @@
         "position": 84,
         "nom": "سورة الإنشقاق",
         "nom_phonetique": "Al-Inshiqaaq",
+        "nom_audio": "084-al-inshiqaq.mp3" ,
         "englishNameTranslation": "The Splitting Open",
         "revelation": "Mecquoise",
         "versets": [
@@ -71808,6 +71892,7 @@
         "position": 85,
         "nom": "سورة البروج",
         "nom_phonetique": "Al-Burooj",
+        "nom_audio": "085-al-buruj.mp3" ,
         "englishNameTranslation": "The Constellations",
         "revelation": "Mecquoise",
         "versets": [
@@ -72082,6 +72167,7 @@
         "position": 86,
         "nom": "سورة الطارق",
         "nom_phonetique": "At-Taariq",
+        "nom_audio": "086-at-tariq.mp3" ,
         "englishNameTranslation": "The Morning Star",
         "revelation": "Mecquoise",
         "versets": [
@@ -72296,6 +72382,7 @@
         "position": 87,
         "nom": "سورة الأعلى",
         "nom_phonetique": "Al-A'laa",
+        "nom_audio": "087-al-ala.mp3" ,
         "englishNameTranslation": "The Most High",
         "revelation": "Mecquoise",
         "versets": [
@@ -72534,6 +72621,7 @@
         "position": 88,
         "nom": "سورة الغاشية",
         "nom_phonetique": "Al-Ghaashiya",
+        "nom_audio": "088-al-ghashiyah.mp3" ,
         "englishNameTranslation": "The Overwhelming",
         "revelation": "Mecquoise",
         "versets": [
@@ -72856,6 +72944,7 @@
         "position": 89,
         "nom": "سورة الفجر",
         "nom_phonetique": "Al-Fajr",
+        "nom_audio": "089-al-fajr.mp3" ,
         "englishNameTranslation": "The Dawn",
         "revelation": "Mecquoise",
         "versets": [
@@ -73226,6 +73315,7 @@
         "position": 90,
         "nom": "سورة البلد",
         "nom_phonetique": "Al-Balad",
+        "nom_audio": "090-al-balad.mp3" ,
         "englishNameTranslation": "The City",
         "revelation": "Mecquoise",
         "versets": [
@@ -73476,6 +73566,7 @@
         "position": 91,
         "nom": "سورة الشمس",
         "nom_phonetique": "Ash-Shams",
+        "nom_audio": "091-ash-shams.mp3" ,
         "englishNameTranslation": "The Sun",
         "revelation": "Mecquoise",
         "versets": [
@@ -73666,6 +73757,7 @@
         "position": 92,
         "nom": "سورة الليل",
         "nom_phonetique": "Al-Lail",
+        "nom_audio": "092-al-lail.mp3" ,
         "englishNameTranslation": "The Night",
         "revelation": "Mecquoise",
         "versets": [
@@ -73928,6 +74020,7 @@
         "position": 93,
         "nom": "سورة الضحى",
         "nom_phonetique": "Ad-Dhuhaa",
+        "nom_audio": "093-ad-duha.mp3" ,
         "englishNameTranslation": "The Morning Hours",
         "revelation": "Mecquoise",
         "versets": [
@@ -74070,6 +74163,7 @@
         "position": 94,
         "nom": "سورة الشرح",
         "nom_phonetique": "Ash-Sharh",
+        "nom_audio": "094-ash-sharh.mp3" ,
         "englishNameTranslation": "The Consolation",
         "revelation": "Mecquoise",
         "versets": [
@@ -74176,6 +74270,7 @@
         "position": 95,
         "nom": "سورة التين",
         "nom_phonetique": "At-Tin",
+        "nom_audio": "095-at-tin.mp3" ,
         "englishNameTranslation": "The Fig",
         "revelation": "Mecquoise",
         "versets": [
@@ -74282,6 +74377,7 @@
         "position": 96,
         "nom": "سورة العلق",
         "nom_phonetique": "Al-Alaq",
+        "nom_audio": "096-al-alaq.mp3",
         "englishNameTranslation": "The Clot",
         "revelation": "Mecquoise",
         "versets": [
@@ -74524,6 +74620,7 @@
         "position": 97,
         "nom": "سورة القدر",
         "nom_phonetique": "Al-Qadr",
+        "nom_audio":"097-al-qadr.mp3",
         "englishNameTranslation": "The Power, Fate",
         "revelation": "Mecquoise",
         "versets": [
@@ -74594,6 +74691,7 @@
         "position": 98,
         "nom": "سورة البينة",
         "nom_phonetique": "Al-Bayyina",
+        "nom_audio":"098-al-bayyinah.mp3",
         "englishNameTranslation": "The Evidence",
         "revelation": "Medinois",
         "versets": [
@@ -74700,6 +74798,7 @@
         "position": 99,
         "nom": "سورة الزلزلة",
         "nom_phonetique": "Az-Zalzala",
+        "nom_audio":"099-az-zalzalah.mp3",
         "englishNameTranslation": "The Earthquake",
         "revelation": "Medinois",
         "versets": [
@@ -74806,6 +74905,7 @@
         "position": 100,
         "nom": "سورة العاديات",
         "nom_phonetique": "Al-Aadiyaat",
+        "nom_audio":"100-al-adiyat.mp3",
         "englishNameTranslation": "The Chargers",
         "revelation": "Mecquoise",
         "versets": [
@@ -74948,6 +75048,7 @@
         "position": 101,
         "nom": "سورة القارعة",
         "nom_phonetique": "Al-Qaari'a",
+        "nom_audio":"101-al-qariyah.mp3",
         "englishNameTranslation": "The Calamity",
         "revelation": "Mecquoise",
         "versets": [
@@ -75090,6 +75191,7 @@
         "position": 102,
         "nom": "سورة التكاثر",
         "nom_phonetique": "At-Takaathur",
+        "nom_audio":"102-at-takathur.mp3",
         "englishNameTranslation": "Competition",
         "revelation": "Mecquoise",
         "versets": [
@@ -75196,6 +75298,7 @@
         "position": 103,
         "nom": "سورة العصر",
         "nom_phonetique": "Al-Asr",
+        "nom_audio":"103-al-asr.mp3",
         "englishNameTranslation": "The Declining Day, Epoch",
         "revelation": "Mecquoise",
         "versets": [
@@ -75242,6 +75345,7 @@
         "position": 104,
         "nom": "سورة الهمزة",
         "nom_phonetique": "Al-Humaza",
+        "nom_audio":"104-al-humazah.mp3",
         "englishNameTranslation": "The Traducer",
         "revelation": "Mecquoise",
         "versets": [
@@ -75360,6 +75464,7 @@
         "position": 105,
         "nom": "سورة الفيل",
         "nom_phonetique": "Al-Fil",
+        "nom_audio":"105-al-fil.mp3",
         "englishNameTranslation": "The Elephant",
         "revelation": "Mecquoise",
         "versets": [
@@ -75430,6 +75535,7 @@
         "position": 106,
         "nom": "سورة قريش",
         "nom_phonetique": "Quraish",
+        "nom_audio":"106-quraish.mp3",
         "englishNameTranslation": "Quraysh",
         "revelation": "Mecquoise",
         "versets": [
@@ -75488,6 +75594,7 @@
         "position": 107,
         "nom": "سورة الماعون",
         "nom_phonetique": "Al-Maa'un",
+        "nom_audio":"107-al-maun.mp3",
         "englishNameTranslation": "Almsgiving",
         "revelation": "Mecquoise",
         "versets": [
@@ -75582,6 +75689,7 @@
         "position": 108,
         "nom": "سورة الكوثر",
         "nom_phonetique": "Al-Kawthar",
+        "nom_audio":"108-al-kawthar.mp3",
         "englishNameTranslation": "Abundance",
         "revelation": "Mecquoise",
         "versets": [
@@ -75628,6 +75736,7 @@
         "position": 109,
         "nom": "سورة الكافرون",
         "nom_phonetique": "Al-Kaafiroon",
+        "nom_audio":"109-al-kafirun.mp3",
         "englishNameTranslation": "The Disbelievers",
         "revelation": "Mecquoise",
         "versets": [
@@ -75710,6 +75819,7 @@
         "position": 110,
         "nom": "سورة النصر",
         "nom_phonetique": "An-Nasr",
+        "nom_audio":"110-an-nasr.mp3",
         "englishNameTranslation": "Divine Support",
         "revelation": "Medinois",
         "versets": [
@@ -75756,6 +75866,7 @@
         "position": 111,
         "nom": "سورة المسد",
         "nom_phonetique": "Al-Masad",
+        "nom_audio":"111-al-masad.mp3",
         "englishNameTranslation": "The Palm Fibre",
         "revelation": "Mecquoise",
         "versets": [
@@ -75826,6 +75937,7 @@
         "position": 112,
         "nom": "سورة الإخلاص",
         "nom_phonetique": "Al-Ikhlaas",
+        "nom_audio":"112-al-ikhlas.mp3",
         "englishNameTranslation": "Sincerity",
         "revelation": "Mecquoise",
         "versets": [
@@ -75884,6 +75996,7 @@
         "position": 113,
         "nom": "سورة الفلق",
         "nom_phonetique": "Al-Falaq",
+        "nom_audio":"113-al-falaq.mp3",
         "englishNameTranslation": "The Dawn",
         "revelation": "Mecquoise",
         "versets": [
@@ -75954,6 +76067,7 @@
         "position": 114,
         "nom": "سورة الناس",
         "nom_phonetique": "An-Naas",
+        "nom_audio":"114-an-nas.mp3",
         "englishNameTranslation": "Mankind",
         "revelation": "Mecquoise",
         "versets": [

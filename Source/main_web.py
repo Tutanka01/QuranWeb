@@ -23,8 +23,17 @@ def quran():
       return render_template('quran.html')
 
 @app.route('/sourate/<sourate>')
+
+
 def sourate(sourate):
-   return render_template('index.html',len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
+   return render_template('index.html', len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
+
+def get_audio_path(sourate):
+    audio_filename = nom_audio(sourate)
+    audio_path = url_for('static', filename='recitation/' + ",audio_filename,")
+    return audio_path
+
+
 
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)
