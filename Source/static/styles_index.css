@@ -56,11 +56,16 @@ body {
 
 .translation {
     display: none;
-    font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
+    font-family: sans-serif;
     border: 2px solid #0066cc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
     background-color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    direction: ltr;
+    position: sticky;
   }
 
 .ayat .ayat-number {

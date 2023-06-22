@@ -32,3 +32,5 @@ def traduction(texte): # Traduit le texte en français
 def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le met en forme
     # Add a title to the hadith
     return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
+
+# pouvoir lancer les fonctions depuis le terminal
