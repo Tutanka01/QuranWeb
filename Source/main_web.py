@@ -26,12 +26,7 @@ def quran():
 
 
 def sourate(sourate):
-   return render_template('index.html', len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
-
-def get_audio_path(sourate):
-    audio_filename = nom_audio(sourate)
-    audio_path = url_for('static', filename='recitation/' + ",audio_filename,")
-    return audio_path
+   return render_template('index.html', audio = get_audio_path(sourate), len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
 
 
 

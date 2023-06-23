@@ -1,4 +1,5 @@
 import json
+from flask import url_for
 
 file = open("jsons/quran_fr.json", "r", encoding='utf-8') # Ouverture du fichier
 data = json.load(file)
@@ -40,6 +41,5 @@ def nom_audio(nom): # Donne le nom de l'audio
         
 def get_audio_path(sourate):
     audio_filename = nom_audio(sourate)
-    audio_path = "url_for('static', filename='recitation/' + ",audio_filename,")"
+    audio_path = url_for('static', filename='recitation/' + audio_filename)
     return audio_path
-
