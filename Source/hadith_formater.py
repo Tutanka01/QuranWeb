@@ -1,8 +1,11 @@
 import json
 from deep_translator import GoogleTranslator
 
-file = open("jsons/bukhary.json", "r") # Ouverture du fichier
+file = open("C:\\Users\\zhiri\\Documents\\mo\\Bukhary_TEST\\Source\\jsons\\bukhary.json", "r") # Ouverture du fichier
 data = json.load(file) # Lecture du fichier en format jsonsq, attention ça le donne en forme de liste de dictionnaire
+
+def livres(): # Donne la liste des livres
+    return [data[i]["books"][j]["name"] for i in range(len(data)) for j in range(len(data[i]["books"]))] # On parcourt les livres et on les met dans une liste
 
 def chapters(who, number): # Donne le nom du chapitre
     for i in range(len(data)):
@@ -26,6 +29,7 @@ def by(chapter, number): # Donne le nom de la persionne qui a rapporte le hadith
                 return data[i]["books"][j]["hadiths"][number]["by"]
             else:
                 raise ValueError("chapter not found")
+            
 def traduction(texte): # Traduit le texte en français
     return GoogleTranslator(source='auto', target='fr').translate(texte)
 

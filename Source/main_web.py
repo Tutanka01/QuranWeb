@@ -10,7 +10,7 @@ from hadith_formater import *
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/')# La route principale cad l'ip
+@app.route('/')# La route principale cad quand j'arrive sur le serveur
 def index():
    return render_template('quran.html', len = len(sourates()), sourates = sourates()) # sourates() sont toutes les sourates ?
 
@@ -23,12 +23,13 @@ def quran():
       return render_template('quran.html')
 
 @app.route('/sourate/<sourate>')
-
-
 def sourate(sourate):
-   return render_template('index.html', audio = get_audio_path(sourate), len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
+   return render_template('quran_sourates.html', audio = get_audio_path(sourate), len = long(quran_text_ar(escape(sourate))),nom_sourate_arabe = nom_sourate_arabe(escape(sourate)), nom_sourate = escape(sourate), sourate_texte= quran_text_ar(escape(sourate)), sourate_translation = quran_text_fr(escape(sourate)))
 
 
+@app.route('/hadiths')
+def hadiths():
+      return render_template('hadiths.html', len = len(livres()), livres = livres())
 
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)

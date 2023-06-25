@@ -3,7 +3,7 @@ body {
   }
   
   .container {
-    width: 99%;
+    width: auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
