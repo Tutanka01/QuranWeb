@@ -36,12 +36,12 @@
       item.addEventListener('click', (event) => {
         event.preventDefault(); // Empêche le rechargement de la page
         const name = item.textContent;
-        fetch(`http://192.168.1.64:5000/hadith_book/${name}`)
+        fetch(`http://192.168.1.64:5000/hadith_livres/${name}`)
           .then(response => {
             if (response.ok) {
               // Rediriger vers la page correspondante
               // Attention cela est une IP locale, donc l'ip de mon pc sur mon rzo
-              window.location.href = `http://192.168.1.64:5000/hadith_book/${name}`;
+              window.location.href = `http://192.168.1.64:5000/hadith_livres/${name}`;
             } else {
               alert('Une erreur est survenue. Veuillez réessayer.');
             }

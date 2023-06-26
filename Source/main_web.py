@@ -31,5 +31,9 @@ def sourate(sourate):
 def hadiths():
       return render_template('hadiths.html', len = len(livres()), livres = livres())
 
+@app.route('/hadith_livres/<livre>')
+def hadith_livres(livre):
+      return render_template('hadiths_livres.html', len = len(list_chapters(livre)), livre = livre, chapitres = list_chapters(livre))
+
 if __name__ == '__main__':
    app.run(host = "0.0.0.0", port = 5000, debug = True)

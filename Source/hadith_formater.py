@@ -15,6 +15,14 @@ def chapters(who, number): # Donne le nom du chapitre
             return "Book not found"
         raise ValueError("Info not found")
     
+## Donne tous les chapitres d'un livre
+def list_chapters(name):
+    for i in range(len(data)):
+        for j in range(len(data[i]["books"])):
+            if data[i]["books"][j]["name"] == name:
+                return [data[i]["books"][j]["hadiths"][k]["info"] for k in range(len(data[i]["books"][j]["hadiths"]))]
+    raise ValueError("Book not found")
+    
 def hadiths(chapter, number): # Donne le hadith
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
