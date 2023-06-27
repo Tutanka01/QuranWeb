@@ -1,24 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_livres_hadith.css') }}">
+    <title>Liste des hadiths du livre : {{ livre }}</title>
 </head>
 <body>
-    <h1>Liste des hadiths du livre {{ livre }}</h1>
-
+    <h1>Liste des hadiths du livre : {{ livre }}</h1>
     <div class="container">
         <div class="lsite">
-            <ul> 
+            <ul>
                 {% for i in range(0, len) %}
                 <div class="container_chapitres">
-                    <li class="chapitre">{{ chapitres[i] }}</li> 
+                    <li class="chapitre-link chapitre" data-livre="{{ livre }}" data-chapitre="{{ i }}">{{ chapitres[i] }}</li> 
                 </div>
                 {% endfor %}
             </ul> 
         </div>
     </div>
 
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chapitres = document.querySelectorAll('.chapitre-link');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+        const modalClose = document.getElementsByClassName('close')[0];
+
+        chapitres.forEach(chapitre => {
+            chapitre.addEventListener('click', (event) => {
+                event.preventDefault(); // Empêcher le comportement par défaut du lien        
+                const livre = chapitre.dataset.livre;
+                const chapitreIndex = chapitre.dataset.chapitre;
+
+                fetch(`/livre/${livre}/${chapitreIndex}`)
+                    .then(response => response.text())
+                    .then(content => {
+                        modalTitle.textContent = chapitres[Number(chapitreIndex)].textContent;
+                        modalContent.innerHTML = content;
+                        modalOverlay.style.display = 'block';
+                    })
+                    .catch(error => {
+                        console.error('Une erreur s\'est produite lors du chargement du hadith :', error);
+                    });
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modalOverlay.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == modalOverlay) {
+                modalOverlay.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

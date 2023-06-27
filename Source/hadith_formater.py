@@ -11,10 +11,9 @@ def chapters(who, number): # Donne le nom du chapitre
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == who:
-                return data[i]  ["books"][j]["hadiths"][number]["info"]
-            return "Book not found"
-        raise ValueError("Info not found")
-    
+                return data[i]["books"][j]["hadiths"][number]["info"]
+    return "Book not found"
+
 ## Donne tous les chapitres d'un livre
 def list_chapters(name):
     for i in range(len(data)):
@@ -22,27 +21,30 @@ def list_chapters(name):
             if data[i]["books"][j]["name"] == name:
                 return [data[i]["books"][j]["hadiths"][k]["info"] for k in range(len(data[i]["books"][j]["hadiths"]))]
     raise ValueError("Book not found")
-    
-def hadiths(chapter, number): # Donne le hadith
-    for i in range(len(data)):
-        for j in range(len(data[i]["books"])):
-            if data[i]["books"][j]["name"] == chapter:
-                return data[i]["books"][j]["hadiths"][number]["text"]
-    raise ValueError("hadith not found")
 
-def by(chapter, number): # Donne le nom de la persionne qui a rapporte le hadith
+def hadiths(livre, chapitre): # Donne le hadith
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
-            if data[i]["books"][j]["name"] == chapter:
-                return data[i]["books"][j]["hadiths"][number]["by"]
-            else:
-                raise ValueError("chapter not found")
-            
+            if data[i]["books"][j]["name"] == livre:
+                return data[i]["books"][j]["hadiths"][chapitre]["text"]
+    raise ValueError("Hadith not found")
+
+def by(livre, chapitre): # Donne le nom de la persionne qui a rapporté le hadith
+    for i in range(len(data)):
+        for j in range(len(data[i]["books"])):
+            if data[i]["books"][j]["name"] == livre:
+                return data[i]["books"][j]["hadiths"][chapitre]["by"]
+    raise ValueError("Chapter not found")
+
 def traduction(texte): # Traduit le texte en français
     return GoogleTranslator(source='auto', target='fr').translate(texte)
 
-def hadiths_beautyfier(hadith, by, chapter): # Ajoute un titre au hadith et le met en forme
+def hadiths_beautyfier(hadith, chapter): # Ajoute un titre au hadith et le met en forme
     # Add a title to the hadith
-    return "Hadith: " + hadith + "\n" + by + "\n" +"in" + chapter + "\n"
+    return "Hadith: " + hadith + "\n" + "\n" +"in" + chapter + "\n"
 
-# pouvoir lancer les fonctions depuis le terminal
+# Donne le texte du hadith selon le livre et le chapitre
+def hadiths_text(livre, chapitre):
+    return hadiths_beautyfier(hadiths(livre, chapitre), by(livre, chapitre))
+
+ # Donne les auteurs des hadiths selon le livre et le chapitre
