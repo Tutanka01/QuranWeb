@@ -1,8 +1,8 @@
 # Choses a modifier et/ou ajouter :
 
 - [x] Que le num des ayat se deforment pas
-- [ ] Ajouter une page d'acceuil avec le choix hadiths ou quran
-- [ ] Page des Livres des hadith avec le choix du livre
+- [x] Ajouter une page d'acceuil avec le choix hadiths ou quran
+- [x] Page des Livres des hadith avec le choix du livre
 - [ ] Ajouter un systeme de login pour que les gens puissent enregistrer leur progression
   - Pas tres urgent :
 - [ ] Ajouter un systeme de recherche pour les hadiths
