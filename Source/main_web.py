@@ -3,6 +3,10 @@ from flask_cors import CORS
 from markupsafe import escape
 from quran_formater import *
 from hadith_formater import *
+import logging
+
+logger = logging.getLogger('waitress')
+logger.setLevel(logging.INFO)
 
 app = Flask(__name__)
 CORS(app)
@@ -46,4 +50,7 @@ def afficher_livre(livre, chapitre):
     return render_template('hadith.html', titre_hadith=titre_hadith, contenu_hadith=contenu_hadith, source_hadith=source_hadith)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    from waitress import serve
+    setup_console_handler = True
+    serve(app, host="0.0.0.0", port=5000)
+

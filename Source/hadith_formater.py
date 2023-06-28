@@ -19,6 +19,8 @@ def list_chapters(name):
     for i in range(len(data)):
         for j in range(len(data[i]["books"])):
             if data[i]["books"][j]["name"] == name:
+                ## Translate to french and return
+                
                 return [data[i]["books"][j]["hadiths"][k]["info"] for k in range(len(data[i]["books"][j]["hadiths"]))]
     raise ValueError("Book not found")
 
