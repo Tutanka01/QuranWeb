@@ -39,8 +39,9 @@ def quran():
     return noms
 ```	 
 
-```
+
 # Voila a quoi ça ressemble par le moment :
+
 ## Page d'acceuil
 ![alt text](images/page_login.png)
 ## Page du quran
