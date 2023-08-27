@@ -50,7 +50,5 @@ def afficher_livre(livre, chapitre):
     return render_template('hadith.html', titre_hadith=titre_hadith, contenu_hadith=contenu_hadith, source_hadith=source_hadith)
 
 if __name__ == '__main__':
-    from waitress import serve
-    setup_console_handler = True
-    serve(app, host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
