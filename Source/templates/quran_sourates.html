@@ -33,6 +33,12 @@
               Your browser does not support the audio element.
             </audio>
             <div class="quran">
+                <!--Mettre la bamallah avant chaque sourate-->
+                <div class="ayat">
+                    <div class="ayat-number">0</div>
+                    <div name="quran-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                </div>
+
                 {% for i in range(0, len) %} 
                     <div class="ayat">
                         <div class="ayat-number">{{i + 1}}</div>
