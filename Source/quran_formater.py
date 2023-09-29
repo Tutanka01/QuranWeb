@@ -1,7 +1,7 @@
 import json
 from flask import url_for
 
-file = open("jsons/quran_fr.json", "r", encoding='utf-8') # Ouverture du fichier
+file = open("Source/jsons/quran_fr.json", "r", encoding='utf-8') # Ouverture du fichier
 data = json.load(file)
 
 def quran_text_fr(nom): # Donne le nom du chapitre

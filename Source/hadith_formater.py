@@ -1,7 +1,7 @@
 import json
 from deep_translator import GoogleTranslator
 
-file = open("C:\\Users\\zhiri\\Documents\\mo\\Bukhary_TEST\\Source\\jsons\\bukhary.json", "r") # Ouverture du fichier
+file = open("Source/jsons/bukhary.json", "r") # Ouverture du fichier
 data = json.load(file) # Lecture du fichier en format jsonsq, attention ça le donne en forme de liste de dictionnaire
 
 def livres(): # Donne la liste des livres
